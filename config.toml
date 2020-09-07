@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://frankieliu.github.io/hugo2/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"

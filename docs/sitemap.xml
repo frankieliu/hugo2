@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://frankieliu.github.io/hugo2/</loc>
     <lastmod>2020-09-06T20:38:37-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://frankieliu.github.io/hugo2/posts/</loc>
     <lastmod>2020-09-06T20:38:37-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/test/</loc>
+    <loc>http://frankieliu.github.io/hugo2/posts/test/</loc>
     <lastmod>2020-09-06T20:38:37-07:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://frankieliu.github.io/hugo2/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://frankieliu.github.io/hugo2/tags/</loc>
   </url>
   
 </urlset>
