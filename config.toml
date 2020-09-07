@@ -1,5 +1,15 @@
-baseURL = "http://frankieliu.github.io/hugo2/"
+#baseURL = "http://frankieliu.github.io/hugo2/"
+relativeURLs = true
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
 publishDir = "docs"
+[markup.asciidocext]
+    extensions = ["asciidoctor-html5s", "asciidoctor-diagram"]
+    workingFolderCurrent = true
+    [markup.asciidocext.attributes]
+        my-base-url = "https://frankieliu.github.io/hugo2/"
+        my-attribute-name = "my value"
+
+[params]
+  custom_css = ["css/custom.css"]
