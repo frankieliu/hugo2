@@ -1,0 +1,45 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with ASCIItoSVG -->
+<svg width="342px" height="240px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="dsFilter" width="150%" height="150%">
+      <feOffset result="offOut" in="SourceGraphic" dx="2" dy="2"/>
+      <feColorMatrix result="matrixOut" in="offOut" type="matrix" values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0"/>
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="3"/>
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal"/>
+    </filter>
+    <marker id="iPointer"
+      viewBox="0 0 10 10" refX="5" refY="5"
+      markerUnits="strokeWidth"
+      markerWidth="8" markerHeight="15"
+      orient="auto">
+      <path d="M 10 0 L 10 10 L 0 5 z" />
+    </marker>
+    <marker id="Pointer"
+      viewBox="0 0 10 10" refX="5" refY="5"
+      markerUnits="strokeWidth"
+      markerWidth="8" markerHeight="15"
+      orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" />
+    </marker>
+  </defs>
+  <g id="closed" filter="url(#dsFilter)" stroke="#000" stroke-width="2" fill="none">
+    <path id="closed0" fill="#fff" filter="url(#dsFilter)" d="M 13.5 34 Q 13.5 24 23.5 24 L 22.5 24 L 31.5 24 L 40.5 24 L 49.5 24 L 58.5 24 L 67.5 24 L 76.5 24 L 85.5 24 L 94.5 24 L 103.5 24 L 112.5 24 L 121.5 24 L 130.5 24 L 139.5 24 L 148.5 24 L 157.5 24 L 166.5 24 L 175.5 24 L 184.5 24 L 193.5 24 L 202.5 24 L 211.5 24 L 220.5 24 L 229.5 24 L 238.5 24 L 237.5 24 Q 247.5 24 247.5 34 L 247.5 40 L 247.5 56 L 247.5 72 L 247.5 88 L 247.5 104 L 247.5 120 L 247.5 136 L 247.5 142 Q 247.5 152 237.5 152 L 238.5 152 L 229.5 152 L 220.5 152 L 211.5 152 L 202.5 152 L 193.5 152 L 184.5 152 L 175.5 152 L 166.5 152 L 157.5 152 L 148.5 152 L 139.5 152 L 130.5 152 L 121.5 152 L 112.5 152 L 103.5 152 L 94.5 152 L 85.5 152 L 76.5 152 L 67.5 152 L 58.5 152 L 49.5 152 L 40.5 152 L 31.5 152 L 22.5 152 L 23.5 152 Q 13.5 152 13.5 142 L 13.5 136 L 13.5 120 L 13.5 104 L 13.5 88 L 13.5 72 L 13.5 56 L 13.5 40 Z" />
+    <path id="closed1" fill="#fff" filter="url(#dsFilter)" d="M 31.5 66 Q 31.5 56 41.5 56 L 40.5 56 L 49.5 56 L 58.5 56 L 67.5 56 L 76.5 56 L 75.5 56 Q 85.5 56 85.5 66 L 85.5 72 L 85.5 88 L 85.5 94 Q 85.5 104 75.5 104 L 76.5 104 L 67.5 104 L 58.5 104 L 49.5 104 L 40.5 104 L 41.5 104 Q 31.5 104 31.5 94 L 31.5 88 L 31.5 72 Z" />
+    <path id="closed4" fill="#fff" filter="url(#dsFilter)" d="M 103.5 66 Q 103.5 56 113.5 56 L 112.5 56 L 121.5 56 L 130.5 56 L 139.5 56 L 148.5 56 L 147.5 56 Q 157.5 56 157.5 66 L 157.5 72 L 157.5 88 L 157.5 94 Q 157.5 104 147.5 104 L 148.5 104 L 139.5 104 L 130.5 104 L 121.5 104 L 112.5 104 L 113.5 104 Q 103.5 104 103.5 94 L 103.5 88 L 103.5 72 Z" />
+    <path id="closed5" fill="#fff" filter="url(#dsFilter)" d="M 175.5 66 Q 175.5 56 185.5 56 L 184.5 56 L 193.5 56 L 202.5 56 L 211.5 56 L 220.5 56 L 219.5 56 Q 229.5 56 229.5 66 L 229.5 72 L 229.5 88 L 229.5 94 Q 229.5 104 219.5 104 L 220.5 104 L 211.5 104 L 202.5 104 L 193.5 104 L 184.5 104 L 185.5 104 Q 175.5 104 175.5 94 L 175.5 88 L 175.5 72 Z" />
+  </g>
+  <g id="lines" stroke="#000" stroke-width="2" fill="none">
+    <path id="open2" d="M 31.5 66 Q 31.5 56 41.5 56 L 40.5 56 L 49.5 56 L 58.5 56 L 67.5 56 L 76.5 56 L 75.5 56 Q 85.5 56 85.5 66 L 85.5 72 L 85.5 88 L 85.5 94 Q 85.5 104 75.5 104 L 76.5 104 L 77.5 104 Q 67.5 104 67.5 94 L 67.5 98 Q 67.5 88 57.5 88 L 58.5 88 L 59.5 88 Q 49.5 88 49.5 78 L 49.5 82 Q 49.5 72 59.5 72 L 58.5 72 L 57.5 72 Q 67.5 72 67.5 62 " />
+    <path id="open3" marker-end="url(#Pointer)" d="M 103.5 66 Q 103.5 56 113.5 56 L 112.5 56 L 121.5 56 L 130.5 56 L 139.5 56 L 148.5 56 L 147.5 56 Q 157.5 56 157.5 66 L 157.5 72 L 157.5 88 L 148.5 88 L 139.5 88 L 130.5 88 " />
+    <path id="open6" marker-end="url(#Pointer)" d="M 175.5 66 Q 175.5 56 185.5 56 L 184.5 56 L 193.5 56 L 202.5 56 L 211.5 56 L 220.5 56 L 219.5 56 Q 229.5 56 229.5 66 L 229.5 72 L 220.5 72 L 211.5 72 L 202.5 72 " />
+    <path id="open7" marker-end="url(#Pointer)" d="M 175.5 66 Q 175.5 56 185.5 56 L 184.5 56 L 193.5 56 L 202.5 56 L 211.5 56 L 220.5 56 L 219.5 56 Q 229.5 56 229.5 66 L 229.5 72 L 229.5 88 L 229.5 94 Q 229.5 104 219.5 104 L 220.5 104 L 211.5 104 L 202.5 104 L 193.5 104 L 184.5 104 L 185.5 104 Q 175.5 104 175.5 94 L 175.5 88 L 184.5 88 L 193.5 88 L 202.5 88 " />
+    <path id="open8" marker-end="url(#Pointer)" d="M 103.5 72 L 112.5 72 L 121.5 72 L 130.5 72 " />
+  </g>
+  <g id="text" stroke="none" style="font-family:Consolas,Monaco,Anonymous Pro,Anonymous,Bitstream Sans Mono,monospace;font-size:15.2px" >
+    <text id="obj9" x="40.5" y="120" fill="#000">ascii</text>
+    <text id="obj10" x="130.5" y="120" fill="#000">2</text>
+    <text id="obj11" x="193.5" y="120" fill="#000">svg</text>
+    <text id="obj12" x="4.5" y="184" fill="#000">https://github.com/asciitosvg</text>
+  </g>
+</svg>
