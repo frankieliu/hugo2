@@ -7,10 +7,11 @@ publishDir = "docs"
 destination = "docs"
 [markup.asciidocext]
     extensions = ["asciidoctor-html5s", "asciidoctor-diagram"]
+# "asciidoctor-katex"
     workingFolderCurrent = true
     [markup.asciidocext.attributes]
         my-base-url = "https://frankieliu.github.io/hugo2/"
         my-attribute-name = "my value"
 
 [params]
-  custom_css = ["css/custom.css"]
+  custom_css = ["css/custom.css", "css/base16.monokai.css", "css/asciidoctor.css"]

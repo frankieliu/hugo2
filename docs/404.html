@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="./css/custom.css">
     
+      <link rel="stylesheet" href="./css/base16.monokai.css">
+    
+      <link rel="stylesheet" href="./css/asciidoctor.css">
+    
 
     
       
@@ -31,7 +35,7 @@
     <meta property="og:title" content="404 Page not found" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/404.html" />
+<meta property="og:url" content="http://localhost:1313/404.html" />
 
 <meta itemprop="name" content="404 Page not found">
 <meta itemprop="description" content="">
@@ -39,7 +43,9 @@
 <meta name="twitter:title" content="404 Page not found"/>
 <meta name="twitter:description" content=""/>
 
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/v4-shims.min.css" integrity="sha256-wN7QJaqAwQ03kgUhyN4EU2phRdDkLrQYbFe0EvpQ60U=" crossorigin="anonymous" />
+
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -94,7 +100,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
     &copy;  My New Hugo Site 2020 
   </a>
     <div>
@@ -116,7 +122,49 @@
   </div>
 </footer>
 
-    
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+    MathJax.Hub.Queue(function() {
+      
+      
+      
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i = 0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+
+</script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+        },
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js"
+        ]
+    }
+    });
+    // Autonumbering by mathjax
+    // MathJax.Hub.Config({
+    // TeX: { equationNumbers: { autoNumber: "AMS" } }
+    // });
+  </script>
+ 
+
+
 
   <script src="./dist/js/app.3fc0f988d21662902933.js"></script>
 

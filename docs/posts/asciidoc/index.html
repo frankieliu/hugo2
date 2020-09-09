@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../../css/custom.css">
     
+      <link rel="stylesheet" href="../../css/base16.monokai.css">
+    
+      <link rel="stylesheet" href="../../css/asciidoctor.css">
+    
 
     
       
@@ -29,28 +33,36 @@
     
     
     <meta property="og:title" content="Asciidoc" />
-<meta property="og:description" content="  Putting another line here in the middle
-   def hello: print(&quot;hello&quot;)         " />
+<meta property="og:description" content="     There are things to note!
+        mathjax \(E = mc^2\)
+ \[\begin{equation} x^2 &#43; y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
+    ditaa      plantuml      syntax highlighting def hello: print(&#34;hello&#34;)   def hello: print(&#34;hello&#34;) (1)     1 A little callout       a2s      vega      vegalite      mermaid      bpmn      nomnoml     " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/asciidoc/" />
+<meta property="og:url" content="http://localhost:1313/posts/asciidoc/" />
 <meta property="article:published_time" content="2020-09-06T23:03:01-07:00" />
 <meta property="article:modified_time" content="2020-09-06T23:03:01-07:00" />
 <meta itemprop="name" content="Asciidoc">
-<meta itemprop="description" content="  Putting another line here in the middle
-   def hello: print(&quot;hello&quot;)         ">
+<meta itemprop="description" content="     There are things to note!
+        mathjax \(E = mc^2\)
+ \[\begin{equation} x^2 &#43; y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
+    ditaa      plantuml      syntax highlighting def hello: print(&#34;hello&#34;)   def hello: print(&#34;hello&#34;) (1)     1 A little callout       a2s      vega      vegalite      mermaid      bpmn      nomnoml     ">
 <meta itemprop="datePublished" content="2020-09-06T23:03:01-07:00" />
 <meta itemprop="dateModified" content="2020-09-06T23:03:01-07:00" />
-<meta itemprop="wordCount" content="10">
+<meta itemprop="wordCount" content="47">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Asciidoc"/>
-<meta name="twitter:description" content="  Putting another line here in the middle
-   def hello: print(&quot;hello&quot;)         "/>
+<meta name="twitter:description" content="     There are things to note!
+        mathjax \(E = mc^2\)
+ \[\begin{equation} x^2 &#43; y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
+    ditaa      plantuml      syntax highlighting def hello: print(&#34;hello&#34;)   def hello: print(&#34;hello&#34;) (1)     1 A little callout       a2s      vega      vegalite      mermaid      bpmn      nomnoml     "/>
 
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/v4-shims.min.css" integrity="sha256-wN7QJaqAwQ03kgUhyN4EU2phRdDkLrQYbFe0EvpQ60U=" crossorigin="anonymous" />
+
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -114,20 +126,20 @@
   <div id="sharing" class="mt3">
 
     
-    <a href="https://www.facebook.com/sharer.php?u=/posts/asciidoc/" class="facebook no-underline" aria-label="share on Facebook">
+    <a href="https://www.facebook.com/sharer.php?u=http://localhost:1313/posts/asciidoc/" class="facebook no-underline" aria-label="share on Facebook">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
 
     </a>
 
     
     
-    <a href="https://twitter.com/share?url=../../posts/asciidoc/&amp;text=Asciidoc" class="twitter no-underline" aria-label="share on Twitter">
+    <a href="https://twitter.com/share?url=http://localhost:1313/posts/asciidoc/&amp;text=Asciidoc" class="twitter no-underline" aria-label="share on Twitter">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
     </a>
 
     
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=../../posts/asciidoc/&amp;title=Asciidoc" class="linkedin no-underline" aria-label="share on LinkedIn">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1313/posts/asciidoc/&amp;title=Asciidoc" class="linkedin no-underline" aria-label="share on LinkedIn">
       <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
@@ -144,38 +156,157 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><div class="imageblock">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><div id="preamble">
+<div class="sectionbody">
+<hr>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>There are things to note!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mathjax">mathjax</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>\(E = mc^2\)</p>
+</div>
+<div class="stemblock">
 <div class="content">
-<img src="diag-8ac9b322bf3e2e1e7b0df17f6f64d0a6.png" alt="diag 8ac9b322bf3e2e1e7b0df17f6f64d0a6" width="540" height="280">
+\[\begin{equation}
+x^2 + y^2 = z^2
+\label{eq:sample}
+\end{equation}\]
 </div>
 </div>
 <div class="paragraph">
-<p>Putting another line here in the middle</p>
+<p>This is a reference to the equation above \(\eqref{eq:sample}\).</p>
 </div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ditaa">ditaa</h2>
+<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="diagram-classes.png" alt="diagram classes" width="269" height="282">
+<img src="diagram-ditaa.svg" alt="diagram ditaa" width="540" height="280">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plantuml">plantuml</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="diagram-classes.svg" alt="diagram classes" width="270" height="283">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_syntax_highlighting">syntax highlighting</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="python"><span class="k">def</span> <span class="nf">hello</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"hello"</span><span class="p">)</span></code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code data-lang="python"><span></span><span class="tok-k">def</span> <span class="tok-nf">hello</span><span class="tok-p">:</span>
-  <span class="tok-k">print</span><span class="tok-p">(</span><span class="tok-s2">&quot;hello&quot;</span><span class="tok-p">)</span></code></pre>
+<pre class="rouge highlight"><code data-lang="python"><span class="k">def</span> <span class="nf">hello</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"hello"</span><span class="p">)</span>  <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
 </div>
 </div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>A little callout</td>
+</tr>
+</table>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a2s">a2s</h2>
+<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
 <img src="diag-aebbe0ced67219a06803ceece1284bdb.svg" alt="diag aebbe0ced67219a06803ceece1284bdb" width="342" height="240">
 </div>
 </div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vega">vega</h2>
+<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="diag-f50c1bf949eed24e29b426b3796a5b8a.svg" alt="diag f50c1bf949eed24e29b426b3796a5b8a" width="435" height="238">
+<img src="treemap.svg" alt="treemap for flare" width="965" height="505">
 </div>
 </div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vegalite">vegalite</h2>
+<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
 <img src="diag-6ffd2d2649da599834a1a66327a83e06.svg" alt="diag 6ffd2d2649da599834a1a66327a83e06" width="376" height="247">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mermaid">mermaid</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="mermaid-graph.svg" alt="mermaid graph" width="128" height="230">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bpmn">bpmn</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="diagram.svg" alt="bpmn diagram" width="300" height="200">
+</div>
+</div>
+<hr>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nomnoml">nomnoml</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="diag-9d21b6d1f749701190e40115db210364.svg" alt="diag 9d21b6d1f749701190e40115db210364" width="765" height="623">
+</div>
+</div>
 </div>
 </div>
 <ul class="pa0">
@@ -199,7 +330,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
     &copy;  My New Hugo Site 2020 
   </a>
     <div>
@@ -221,7 +352,49 @@
   </div>
 </footer>
 
-    
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+    MathJax.Hub.Queue(function() {
+      
+      
+      
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i = 0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+
+</script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+        },
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js"
+        ]
+    }
+    });
+    // Autonumbering by mathjax
+    // MathJax.Hub.Config({
+    // TeX: { equationNumbers: { autoNumber: "AMS" } }
+    // });
+  </script>
+ 
+
+
 
   <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
 
