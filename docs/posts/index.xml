@@ -17,10 +17,10 @@
       <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
       
       <guid>http://localhost:1313/posts/asciidoc/</guid>
-      <description>     There are things to note!
-        mathjax \(E = mc^2\)
+      <description>Table of Contents mathjax ditaa plantuml syntax highlighting a2s vega vegalite mermaid bpmn nomnoml       There are things to note!
+       mathjax \(E = mc^2\)
  \[\begin{equation} x^2 + y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
-    ditaa      plantuml      syntax highlighting def hello: print(&#34;hello&#34;)   def hello: print(&#34;hello&#34;) (1)     1 A little callout       a2s      vega      vegalite      mermaid      bpmn      nomnoml     </description>
+   ditaa     plantuml     syntax highlighting def hello: print(&#34;</description>
     </item>
     
     <item>

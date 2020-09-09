@@ -11,15 +11,13 @@ draft: false
 :fonts: icons
 :icon-set: fas
 :stem: latexmath
+:toc: right
 
-
-'''
 [NOTE]
 ====
 There are things to note!
 ====
 
-'''
 == mathjax
 
 stem:[E = mc^2]
@@ -34,7 +32,6 @@ x^2 + y^2 = z^2
 
 This is a reference to the equation above stem:[\eqref{eq:sample}].
 
-'''
 == ditaa
 
 [ditaa,diagram-ditaa,svg]
@@ -58,7 +55,6 @@ This is a reference to the equation above stem:[\eqref{eq:sample}].
 ....
 
 
-'''
 == plantuml
 
 [plantuml, diagram-classes, svg]     
@@ -73,7 +69,6 @@ DiagramBlock <|-- DitaaBlock
 DiagramBlock <|-- PlantUmlBlock
 ....
 
-'''
 == syntax highlighting
 
 [source,python]
@@ -89,7 +84,6 @@ def hello:
 
 <1> A little callout
 
-'''
 == a2s
 
 [a2s]
@@ -110,12 +104,10 @@ https://github.com/asciitosvg
 [1,0]: {"fill":"#88d","a2s:delref":1}
 ....
 
-'''
 == vega
 
 vega::data/treemap.json[alt="treemap for flare"]
 
-'''
 == vegalite
 
 [vegalite]
@@ -138,7 +130,6 @@ vega::data/treemap.json[alt="treemap for flare"]
 }
 ....
 
-'''
 == mermaid
 
 [mermaid,mermaid-graph,svg]
@@ -150,12 +141,10 @@ graph TD;
     C-->D;
 ....
 
-'''
 == bpmn
 
 bpmn::data/diagram.bpmn[format=svg,target="diagram",alt="bpmn diagram",width=300,height=200]
 
-'''
 == nomnoml
 
 [nomnoml]
