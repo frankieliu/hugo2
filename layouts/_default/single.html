@@ -1,0 +1,18 @@
+{{ define "body" }}
+<body class="article toc2 toc-left">
+{{ end }}
+
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+
+  <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+  {{- .Date.Format "January 2, 2006" -}}
+  </time>
+  <!-- div class="article toc2 toc-left" -->
+      {{- .Content -}}
+  <!-- /div -->
+{{ end }}

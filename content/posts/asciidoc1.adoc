@@ -1,20 +1,17 @@
 ---
-title: "Asciidoc"
+title: "Asciidoc1"
 date: 2020-09-06T23:03:01-07:00
 draft: false 
 ---
-= asciidoctor 
-:source-highlighter: pygments
-// :pygments-css: class
-// :pygments-style: manni
-:linkcss:
-// :rouge-style: base16.monokai
+
+= Source highlight lines
+:source-highlighter: rouge 
+:rouge-style: base16.monokai
 :icons: font
 :fonts: icons
 :icon-set: fas
 :stem: latexmath
-:eqnums: AMS
-:toc: left 
+:toc: right
 
 [NOTE]
 ====
@@ -73,16 +70,6 @@ DiagramBlock <|-- PlantUmlBlock
 ....
 
 == syntax highlighting
-
-.app.rb
-[source,ruby]
-----
-require 'sinatra'
-
-get '/hi' do
-  "Hello World!"
-end
-----
 
 [source,python]
 ----
