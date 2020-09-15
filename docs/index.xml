@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frankie Liu&#39;s Site</title>
-    <link>http://localhost:1313/</link>
+    <link>/</link>
     <description>Recent content on Frankie Liu&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 23:03:01 -0700</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Asciidoc</title>
-      <link>http://localhost:1313/posts/asciidoc/</link>
+      <link>/posts/asciidoc/</link>
       <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/asciidoc/</guid>
+      <guid>/posts/asciidoc/</guid>
       <description>asciidoctor  asciidoctor Table of Contents mathjax ditaa plantuml syntax highlighting a2s vega vegalite mermaid bpmn nomnoml        There are things to note!
        mathjax \(E = mc^2\)
  \[\begin{equation} x^2 + y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
@@ -25,19 +25,19 @@
     
     <item>
       <title>Asciidoc1</title>
-      <link>http://localhost:1313/posts/asciidoc1/</link>
+      <link>/posts/asciidoc1/</link>
       <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/asciidoc1/</guid>
+      <guid>/posts/asciidoc1/</guid>
       <description>Source highlight lines  /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */ /* Uncomment @import statement to use as custom stylesheet */ /*@import &#34;https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700&#34;;*/ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block} audio,video{display:inline-block} audio:not([controls]){display:none;height:0} html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%} a{background:none} a:focus{outline:thin dotted} a:active,a:hover{outline:0} h1{font-size:2em;margin:.67em 0} abbr[title]{border-bottom:1px dotted} b,strong{font-weight:bold} dfn{font-style:italic} hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0} mark{background:#ff0;color:#000} code,kbd,pre,samp{font-family:monospace;font-size:1em} pre{white-space:pre-wrap} q{quotes:&#34;\201C&#34; &#34;\201D&#34; &#34;\2018&#34; &#34;\2019&#34;} small{font-size:80%} sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline} sup{top:-.5em} sub{bottom:-.25em} img{border:0} svg:not(:root){overflow:hidden} figure{margin:0} fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em} legend{border:0;padding:0} button,input,select,textarea{font-family:inherit;font-size:100%;margin:0} button,input{line-height:normal} button,select{text-transform:none} button,html input[type=&#34;button&#34;],input[type=&#34;reset&#34;],input[type=&#34;submit&#34;]{-webkit-appearance:button;cursor:pointer} button[disabled],html input[disabled]{cursor:default} input[type=&#34;</description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>http://localhost:1313/posts/test/</link>
+      <link>/posts/test/</link>
       <pubDate>Sun, 06 Sep 2020 20:38:37 -0700</pubDate>
       
-      <guid>http://localhost:1313/posts/test/</guid>
+      <guid>/posts/test/</guid>
       <description></description>
     </item>
     
