@@ -3,36 +3,113 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/editor/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/text/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/vim/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vim/</loc>
+    <lastmod>2020-09-16T17:41:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/visual-code/</loc>
+    <lastmod>2020-09-16T15:48:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/os/</loc>
+    <lastmod>2020-09-15T16:34:05-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/windows/</loc>
+    <lastmod>2020-09-15T16:34:05-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/windows-terminal/</loc>
+    <lastmod>2020-09-15T16:34:05-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-terminal/</loc>
+    <lastmod>2020-09-15T16:34:05-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2020-09-15T13:08:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/theme/</loc>
+    <lastmod>2020-09-15T13:08:43-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/moringa/</loc>
+    <lastmod>2020-09-15T11:24:24-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/plants/</loc>
+    <lastmod>2020-09-15T11:24:24-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/posts/asciidoc/</loc>
     <lastmod>2020-09-06T23:03:01-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/asciidoc1/</loc>
+    <loc>/series/docs/</loc>
     <lastmod>2020-09-06T23:03:01-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/categories/ssg/</loc>
     <lastmod>2020-09-06T23:03:01-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/posts/</loc>
-    <lastmod>2020-09-06T23:03:01-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/test/</loc>
+    <loc>/posts/rue/</loc>
     <lastmod>2020-09-06T20:38:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssg on Frankie Liu&#39;s Site</title>
+    <link>/categories/ssg/</link>
+    <description>Recent content in ssg on Frankie Liu&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Sep 2020 23:03:01 -0700</lastBuildDate>
+    
+	<atom:link href="/categories/ssg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Asciidoc</title>
+      <link>/posts/asciidoc/</link>
+      <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
+      
+      <guid>/posts/asciidoc/</guid>
+      <description>asciidoctor  asciidoctor Table of Contents mathjax ditaa plantuml syntax highlighting a2s vega vegalite mermaid bpmn nomnoml        There are things to note!
+       mathjax \(E = mc^2\)
+ \[\begin{equation} x^2 + y^2 = z^2 \label{eq:sample} \end{equation}\]   This is a reference to the equation above \(\eqref{eq:sample}\).
+   ditaa     plantuml     syntax highlighting app.</description>
+    </item>
+    
+  </channel>
+</rss>

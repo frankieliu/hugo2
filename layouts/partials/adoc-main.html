@@ -1,0 +1,21 @@
+<div id="asciidoctor-padding">
+<p>
+{{ partial "social-share.html" . }}
+<p>
+<time {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+  {{- .Date.Format "January 2, 2006" -}}
+</time>
+</div>
+{{- .Content -}}
+<p>
+{{- partial "tags.html" . -}}
+{{- partial "related.html" . -}}
+<div class="mt6 instapaper_ignoref">
+{{ if .Site.DisqusShortname }}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}
+{{ if .Site.Params.commentoEnable }}
+  {{- partial "commento.html" . -}}
+{{ end }}
+</div>
+

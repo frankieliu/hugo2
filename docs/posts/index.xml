@@ -6,10 +6,68 @@
     <description>Recent content in Posts on Frankie Liu&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2020 23:03:01 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 17:41:02 -0700</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vim</title>
+      <link>/posts/vim/</link>
+      <pubDate>Wed, 16 Sep 2020 17:41:02 -0700</pubDate>
+      
+      <guid>/posts/vim/</guid>
+      <description>Vim  Vim Table of Contents Folding    Folding Table 1. Vim folding commands     Command Explanation     zf#j
+ creates a fold from the cursor down # lines.
+   zf/
+ string creates a fold from the cursor to string.
+   zj
+ moves the cursor to the next fold.
+   zk
+ moves the cursor to the previous fold.</description>
+    </item>
+    
+    <item>
+      <title>Visual Code</title>
+      <link>/posts/visual-code/</link>
+      <pubDate>Wed, 16 Sep 2020 15:48:04 -0700</pubDate>
+      
+      <guid>/posts/visual-code/</guid>
+      <description>Visual Code  Visual Code Table of Contents Docs Context menu Formatting    Docs Documentation for Visual Studio Code https://code.visualstudio.com/docs?start=true
+   Context menu The menu that comes us when you press right click
+ what is the context menu in visual code - Google Search https://www.google.com/search?q=what+is+the+context+menu+in+visual+code&amp;amp;rlz=1C1CHBF_enUS811US811&amp;amp;oq=what+is+the+context+menu+in+visual+code&amp;amp;aqs=chrome..69i57.7140j0j7&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8
+   Formatting Shift-Alt-f: formats the buffer
+    Last updated 2020-09-19 19:19:33 -0700   MathJax.</description>
+    </item>
+    
+    <item>
+      <title>Windows Terminal</title>
+      <link>/posts/windows-terminal/</link>
+      <pubDate>Tue, 15 Sep 2020 16:34:05 -0700</pubDate>
+      
+      <guid>/posts/windows-terminal/</guid>
+      <description>Windows Terminal  Windows Terminal Table of Contents Setting up Color schemes Generate a manifest of schemes Default .json app Save default settings Add color schemes Reformat the .json file Change the color scheme   vs Windows console Color scheme Adding a font Problems vs WindowsTerminal   References console windows terminal fonts color schemes clipboard support launch links notepad++      Setting up Download WindowsTerminal from github.</description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>/posts/theme/</link>
+      <pubDate>Tue, 15 Sep 2020 13:08:43 -0700</pubDate>
+      
+      <guid>/posts/theme/</guid>
+      <description>baseof All the pages take off from this one
+single In particular, single can override some of the blocks of baseof
+adoc In order to get asciidoctor&amp;rsquo;s style to be retained, we disabled most of the styling.</description>
+    </item>
+    
+    <item>
+      <title>Moringa</title>
+      <link>/posts/moringa/</link>
+      <pubDate>Tue, 15 Sep 2020 11:24:24 -0700</pubDate>
+      
+      <guid>/posts/moringa/</guid>
+      <description>Moringa </description>
+    </item>
     
     <item>
       <title>Asciidoc</title>
@@ -24,21 +82,12 @@
     </item>
     
     <item>
-      <title>Asciidoc1</title>
-      <link>/posts/asciidoc1/</link>
-      <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
-      
-      <guid>/posts/asciidoc1/</guid>
-      <description>Source highlight lines  /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */ /* Uncomment @import statement to use as custom stylesheet */ /*@import &#34;https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700&#34;;*/ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block} audio,video{display:inline-block} audio:not([controls]){display:none;height:0} html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%} a{background:none} a:focus{outline:thin dotted} a:active,a:hover{outline:0} h1{font-size:2em;margin:.67em 0} abbr[title]{border-bottom:1px dotted} b,strong{font-weight:bold} dfn{font-style:italic} hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0} mark{background:#ff0;color:#000} code,kbd,pre,samp{font-family:monospace;font-size:1em} pre{white-space:pre-wrap} q{quotes:&#34;\201C&#34; &#34;\201D&#34; &#34;\2018&#34; &#34;\2019&#34;} small{font-size:80%} sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline} sup{top:-.5em} sub{bottom:-.25em} img{border:0} svg:not(:root){overflow:hidden} figure{margin:0} fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em} legend{border:0;padding:0} button,input,select,textarea{font-family:inherit;font-size:100%;margin:0} button,input{line-height:normal} button,select{text-transform:none} button,html input[type=&#34;button&#34;],input[type=&#34;reset&#34;],input[type=&#34;submit&#34;]{-webkit-appearance:button;cursor:pointer} button[disabled],html input[disabled]{cursor:default} input[type=&#34;</description>
-    </item>
-    
-    <item>
       <title>Test</title>
-      <link>/posts/test/</link>
+      <link>/posts/rue/</link>
       <pubDate>Sun, 06 Sep 2020 20:38:37 -0700</pubDate>
       
-      <guid>/posts/test/</guid>
-      <description></description>
+      <guid>/posts/rue/</guid>
+      <description>Why isn&amp;rsquo;t this showing up? </description>
     </item>
     
   </channel>

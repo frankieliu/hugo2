@@ -1,0 +1,172 @@
+---
+title: "Windows Terminal"
+date: 2020-09-15T16:34:05-07:00
+tags: ["windows-terminal"]
+categories: ["windows"]
+series: ["os"]
+draft: false 
+---
+
+= Windows Terminal
+:source-highlighter: pygments
+:linkcss:
+:icons: font
+:fonts: icons
+:icon-set: fas
+:stem: latexmath
+:eqnums: AMS
+:toc: left
+
+== Setting up
+
+Download WindowsTerminal from github.
+
+== Color schemes
+
+=== Generate a manifest of schemes
+. Download the color schemes
+   https://github.com/frankieliu/iTerm2-Color-Schemes[Color Schemes]
+. Use `jq` to form a large json file
+
+[source,bash]
+----
+hub clone mbadolato/iTerm2-Color-Schemes
+cd iTerm2-Color-Schemes
+jq -s '.' *.json > manifest.json
+----
+
+=== Default `.json` app
+. Download Visual Code
+. Create a `dummy.json`
+. Select Visual Code as the default editor
+
+=== Save default settings
+. Open the default settings with Alt+Ctrl+'
+. Copy all
+. Open the non-default settting with Ctrl+'
+. Paste the default one
+
+=== Add color schemes
+. Open the `manifest.json` from above
+. Splice into the scheme section
+. Make sure to delete the inbetween square brackets
+
+=== Reformat the `.json` file
+. In Visual Code, use Shift+Alt+F to reformat the document
+. This can also be done by right clicking and getting the "context menu"
+
+=== Change the color scheme
+. Under a profile add a `"colorScheme": "Broadcast"` (or whatever)
+. Using Notepad++ and content aware filling
+. `C:\Users\adam\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
+. Open the above file in Notepad++
+. When selecting a colorScheme, Notepad++ seems to know the available choices
+. I am primarily using Visual Code for the formatting capability, other
+  formatters won't work on the `settings.json` file because they contain
+  comments, but Visual Code doesn't seem to mind the comments.
+
+== vs Windows console
+
+=== Color scheme
+
+I tried using `ColorTool.exe` to change the color scheme for the default
+console for WSL, but it did not work
+
+=== Adding a font
+
+Adding a font (e.g. Ubuntu Monospace)
+
+. Installing the font is a pain.
+. Download a mono spaced font from `fontsquirrel`.
+. Unpack it and right click on a `ttf` file to install it.
+. Have to use regedit to add the font under.
+.. Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont
+.. Insert a new String Value with a unique ID, and use the font name 'Ubuntu Mono'.
+... The font name can be found when you right click on the `.ttf` and try to preview the font.
+
+=== Problems
+
+. Fonts don't render well.
+. Color scheme change not working (it is not clear how to change the palette).
+
+=== vs WindowsTerminal
+
+. The default font looks great.
+. After figuring out how to add the color schemes, eye strain is minimal.
+. The response is quite smooth.
+  
+== References
+
+=== console
+
+What's New in the Windows Console in Windows Server 2016 Technical Preview | Microsoft Docs
+https://docs.microsoft.com/en-us/previous-versions/orphan-topics/ws.11/mt427362(v=ws.11)?redirectedfrom=MSDN
+
+New Experimental Console Features | Windows Command Line
+https://devblogs.microsoft.com/commandline/new-experimental-console-features/
+
+Introducing the Windows Console Colortool | Windows Command Line
+https://devblogs.microsoft.com/commandline/introducing-the-windows-console-colortool/
+
+=== windows terminal
+
+Get Windows Terminal - Microsoft Store
+https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
+
+Windows Terminal Profile Settings | Microsoft Docs
+https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-settings
+
+How to Customize the New Windows Terminal App
+https://www.howtogeek.com/426346/how-to-customize-the-new-windows-terminal-app/
+
+=== fonts
+
+How to add Custom Fonts to Command Prompt in Windows 10
+https://www.thewindowsclub.com/add-custom-fonts-to-command-prompt#:~:text=Add%20the%20custom%20font%20to%20the%20Command%20Prompt,section%20and%20click%20on%20OK.
+
+Monospaced Fonts | Font Squirrel
+https://www.fontsquirrel.com/fonts/list/classification/monospaced
+
+=== color schemes
+
+mbadolato/iTerm2-Color-Schemes: Over 230 terminal color schemes/themes for iTerm/iTerm2. Includes ports to Terminal, Konsole, PuTTY, Xresources, XRDB, Remmina, Termite, XFCE, Tilda, FreeBSD VT, Terminator, Kitty, MobaXterm, LXTerminal, Microsoft's Windows Terminal, Visual Studio, Alacritty
+https://github.com/mbadolato/iTerm2-Color-Schemes#installation-instructions
+
+Release Color Tool April 2019 � microsoft/terminal
+https://github.com/microsoft/terminal/releases/tag/1904.29002
+
+=== clipboard support
+
+Is there a suggested clipboard solution for WSL ? � Issue #12092 � neovim/neovim
+https://github.com/neovim/neovim/issues/12092
+
+WSL / bash-on-Windows: clipboard support � Issue #6227 � neovim/neovim
+https://github.com/neovim/neovim/issues/6227
+
+When can the Windows command line tool directly copy/paste using Command/Ctrl + C/V? - Microsoft Q&A
+https://docs.microsoft.com/en-us/answers/questions/510/when-can-the-windows-command-line-tool-directly-co.html#:~:text=The%20Windows%20command%20line%20can,%2F%20Ctrl%20%2B%20C%20%2F%20V.
+
+Windows Subsystem Linux - Make VIM use the clipboard? - Super User
+https://superuser.com/questions/1291425/windows-subsystem-linux-make-vim-use-the-clipboard
+
+mintty/wsltty: Mintty as a terminal for Bash on Ubuntu on Windows / WSL
+https://github.com/mintty/wsltty
+
+=== launch
+
+How do I get Windows 10 Terminal to launch WSL? - Stack Overflow
+https://stackoverflow.com/questions/56765067/how-do-i-get-windows-10-terminal-to-launch-wsl
+
+=== links
+
+Design Clickable Links & Link preview feature/extension � Issue #574 � microsoft/terminal
+https://github.com/microsoft/terminal/issues/574
+
+=== notepad++
+
+Notepad++ 7.8.9: Stand with Hong Kong | Notepad++
+https://notepad-plus-plus.org/downloads/v7.8.9/
+
+notepad++ - Different colorisation for Json properties and values - Super User
+https://superuser.com/questions/1394957/different-colorisation-for-json-properties-and-values/1399767
+

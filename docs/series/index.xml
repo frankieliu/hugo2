@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Frankie Liu&#39;s Site</title>
+    <link>/series/</link>
+    <description>Recent content in Series on Frankie Liu&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2020 17:41:02 -0700</lastBuildDate>
+    
+	<atom:link href="/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>text</title>
+      <link>/series/text/</link>
+      <pubDate>Wed, 16 Sep 2020 17:41:02 -0700</pubDate>
+      
+      <guid>/series/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>os</title>
+      <link>/series/os/</link>
+      <pubDate>Tue, 15 Sep 2020 16:34:05 -0700</pubDate>
+      
+      <guid>/series/os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docs</title>
+      <link>/series/docs/</link>
+      <pubDate>Sun, 06 Sep 2020 23:03:01 -0700</pubDate>
+      
+      <guid>/series/docs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

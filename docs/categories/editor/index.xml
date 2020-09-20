@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>editor on Frankie Liu&#39;s Site</title>
+    <link>/categories/editor/</link>
+    <description>Recent content in editor on Frankie Liu&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2020 17:41:02 -0700</lastBuildDate>
+    
+	<atom:link href="/categories/editor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim</title>
+      <link>/posts/vim/</link>
+      <pubDate>Wed, 16 Sep 2020 17:41:02 -0700</pubDate>
+      
+      <guid>/posts/vim/</guid>
+      <description>Vim  Vim Table of Contents Folding    Folding Table 1. Vim folding commands     Command Explanation     zf#j
+ creates a fold from the cursor down # lines.
+   zf/
+ string creates a fold from the cursor to string.
+   zj
+ moves the cursor to the next fold.
+   zk
+ moves the cursor to the previous fold.</description>
+    </item>
+    
+  </channel>
+</rss>

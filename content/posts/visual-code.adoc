@@ -1,0 +1,35 @@
+---
+title: "Visual Code"
+date: 2020-09-16T15:48:04-07:00
+tags: [""]
+categories: [""]
+series: [""]
+draft: false 
+---
+
+= Visual Code
+:source-highlighter: pygments
+:linkcss:
+:icons: font
+:fonts: icons
+:icon-set: fas
+:stem: latexmath
+:eqnums: AMS
+:toc: left 
+
+== Docs
+
+Documentation for Visual Studio Code
+https://code.visualstudio.com/docs?start=true
+
+== Context menu
+
+The menu that comes us when you press right click
+
+what is the context menu in visual code - Google Search
+https://www.google.com/search?q=what+is+the+context+menu+in+visual+code&rlz=1C1CHBF_enUS811US811&oq=what+is+the+context+menu+in+visual+code&aqs=chrome..69i57.7140j0j7&sourceid=chrome&ie=UTF-8
+
+== Formatting
+
+Shift-Alt-f: formats the buffer
+

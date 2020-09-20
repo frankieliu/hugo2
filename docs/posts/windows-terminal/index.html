@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Windows Terminal | Frankie Liu&#39;s Site</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="../../dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="../../css/time.css">
+    
+      <link rel="stylesheet" href="../../css/asciidoctor.css">
+    
+      <link rel="stylesheet" href="../../css/pygments-default.css">
+    
+      <link rel="stylesheet" href="../../https:/fonts.googleapis.com/css?family=Open&#43;Sans:300,300italic,400,400italic,600,600italic%7CNoto&#43;Serif:400,400italic,700,700italic%7CDroid&#43;Sans&#43;Mono:400,700">
+    
+      <link rel="stylesheet" href="../../https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Windows Terminal" />
+<meta property="og:description" content="Windows Terminal  Windows Terminal Table of Contents Setting up Color schemes Generate a manifest of schemes Default .json app Save default settings Add color schemes Reformat the .json file Change the color scheme   vs Windows console Color scheme Adding a font Problems vs WindowsTerminal   References console windows terminal fonts color schemes clipboard support launch links notepad&#43;&#43;      Setting up Download WindowsTerminal from github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/windows-terminal/" />
+<meta property="article:published_time" content="2020-09-15T16:34:05-07:00" />
+<meta property="article:modified_time" content="2020-09-15T16:34:05-07:00" />
+
+<meta itemprop="name" content="Windows Terminal">
+<meta itemprop="description" content="Windows Terminal  Windows Terminal Table of Contents Setting up Color schemes Generate a manifest of schemes Default .json app Save default settings Add color schemes Reformat the .json file Change the color scheme   vs Windows console Color scheme Adding a font Problems vs WindowsTerminal   References console windows terminal fonts color schemes clipboard support launch links notepad&#43;&#43;      Setting up Download WindowsTerminal from github.">
+<meta itemprop="datePublished" content="2020-09-15T16:34:05-07:00" />
+<meta itemprop="dateModified" content="2020-09-15T16:34:05-07:00" />
+<meta itemprop="wordCount" content="709">
+
+
+
+<meta itemprop="keywords" content="windows-terminal," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Windows Terminal"/>
+<meta name="twitter:description" content="Windows Terminal  Windows Terminal Table of Contents Setting up Color schemes Generate a manifest of schemes Default .json app Save default settings Add color schemes Reformat the .json file Change the color scheme   vs Windows console Color scheme Adding a font Problems vs WindowsTerminal   References console windows terminal fonts color schemes clipboard support launch links notepad&#43;&#43;      Setting up Download WindowsTerminal from github."/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/v4-shims.min.css" integrity="sha256-wN7QJaqAwQ03kgUhyN4EU2phRdDkLrQYbFe0EvpQ60U=" crossorigin="anonymous" />
+
+  </head>
+
+  
+  
+  <body class="article toc2 toc-left">
+ 
+
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="../../" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Frankie Liu&#39;s Site
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="../../categories" title="Categories page">
+              Categories
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="../../series" title="Series page">
+              Series
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="../../tags" title="Tags page">
+              Tags
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <div id="asciidoctor-padding">
+<p>
+
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=/posts/windows-terminal/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=../../posts/windows-terminal/&amp;text=Windows%20Terminal" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=../../posts/windows-terminal/&amp;title=Windows%20Terminal" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+<p>
+<time datetime="2020-09-15T16:34:05-07:00">September 15, 2020</time>
+</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Windows Terminal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Windows Terminal</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_setting_up">Setting up</a></li>
+<li><a href="#_color_schemes">Color schemes</a>
+<ul class="sectlevel2">
+<li><a href="#_generate_a_manifest_of_schemes">Generate a manifest of schemes</a></li>
+<li><a href="#_default_json_app">Default <code>.json</code> app</a></li>
+<li><a href="#_save_default_settings">Save default settings</a></li>
+<li><a href="#_add_color_schemes">Add color schemes</a></li>
+<li><a href="#_reformat_the_json_file">Reformat the <code>.json</code> file</a></li>
+<li><a href="#_change_the_color_scheme">Change the color scheme</a></li>
+</ul>
+</li>
+<li><a href="#_vs_windows_console">vs Windows console</a>
+<ul class="sectlevel2">
+<li><a href="#_color_scheme">Color scheme</a></li>
+<li><a href="#_adding_a_font">Adding a font</a></li>
+<li><a href="#_problems">Problems</a></li>
+<li><a href="#_vs_windowsterminal">vs WindowsTerminal</a></li>
+</ul>
+</li>
+<li><a href="#_references">References</a>
+<ul class="sectlevel2">
+<li><a href="#_console">console</a></li>
+<li><a href="#_windows_terminal">windows terminal</a></li>
+<li><a href="#_fonts">fonts</a></li>
+<li><a href="#_color_schemes_2">color schemes</a></li>
+<li><a href="#_clipboard_support">clipboard support</a></li>
+<li><a href="#_launch">launch</a></li>
+<li><a href="#_links">links</a></li>
+<li><a href="#_notepad">notepad++</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_setting_up">Setting up</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Download WindowsTerminal from github.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_color_schemes">Color schemes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generate_a_manifest_of_schemes">Generate a manifest of schemes</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download the color schemes
+<a href="https://github.com/frankieliu/iTerm2-Color-Schemes">Color Schemes</a></p>
+</li>
+<li>
+<p>Use <code>jq</code> to form a large json file</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>hub clone mbadolato/iTerm2-Color-Schemes
+<span class="tok-nb">cd</span> iTerm2-Color-Schemes
+jq -s <span class="tok-s1">&#39;.&#39;</span> *.json &gt; manifest.json</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_default_json_app">Default <code>.json</code> app</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download Visual Code</p>
+</li>
+<li>
+<p>Create a <code>dummy.json</code></p>
+</li>
+<li>
+<p>Select Visual Code as the default editor</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_save_default_settings">Save default settings</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the default settings with Alt+Ctrl+'</p>
+</li>
+<li>
+<p>Copy all</p>
+</li>
+<li>
+<p>Open the non-default settting with Ctrl+'</p>
+</li>
+<li>
+<p>Paste the default one</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_color_schemes">Add color schemes</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the <code>manifest.json</code> from above</p>
+</li>
+<li>
+<p>Splice into the scheme section</p>
+</li>
+<li>
+<p>Make sure to delete the inbetween square brackets</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reformat_the_json_file">Reformat the <code>.json</code> file</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In Visual Code, use Shift+Alt+F to reformat the document</p>
+</li>
+<li>
+<p>This can also be done by right clicking and getting the "context menu"</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_change_the_color_scheme">Change the color scheme</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Under a profile add a <code>"colorScheme": "Broadcast"</code> (or whatever)</p>
+</li>
+<li>
+<p>Using Notepad++ and content aware filling</p>
+</li>
+<li>
+<p><code>C:\Users\adam\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json</code></p>
+</li>
+<li>
+<p>Open the above file in Notepad++</p>
+</li>
+<li>
+<p>When selecting a colorScheme, Notepad++ seems to know the available choices</p>
+</li>
+<li>
+<p>I am primarily using Visual Code for the formatting capability, other
+formatters won&#8217;t work on the <code>settings.json</code> file because they contain
+comments, but Visual Code doesn&#8217;t seem to mind the comments.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vs_windows_console">vs Windows console</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_color_scheme">Color scheme</h3>
+<div class="paragraph">
+<p>I tried using <code>ColorTool.exe</code> to change the color scheme for the default
+console for WSL, but it did not work</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adding_a_font">Adding a font</h3>
+<div class="paragraph">
+<p>Adding a font (e.g. Ubuntu Monospace)</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Installing the font is a pain.</p>
+</li>
+<li>
+<p>Download a mono spaced font from <code>fontsquirrel</code>.</p>
+</li>
+<li>
+<p>Unpack it and right click on a <code>ttf</code> file to install it.</p>
+</li>
+<li>
+<p>Have to use regedit to add the font under.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont</p>
+</li>
+<li>
+<p>Insert a new String Value with a unique ID, and use the font name 'Ubuntu Mono'.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>The font name can be found when you right click on the <code>.ttf</code> and try to preview the font.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_problems">Problems</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Fonts don&#8217;t render well.</p>
+</li>
+<li>
+<p>Color scheme change not working (it is not clear how to change the palette).</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vs_windowsterminal">vs WindowsTerminal</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The default font looks great.</p>
+</li>
+<li>
+<p>After figuring out how to add the color schemes, eye strain is minimal.</p>
+</li>
+<li>
+<p>The response is quite smooth.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_console">console</h3>
+<div class="paragraph">
+<p>What&#8217;s New in the Windows Console in Windows Server 2016 Technical Preview | Microsoft Docs
+<a href="https://docs.microsoft.com/en-us/previous-versions/orphan-topics/ws.11/mt427362(v=ws.11)?redirectedfrom=MSDN" class="bare">https://docs.microsoft.com/en-us/previous-versions/orphan-topics/ws.11/mt427362(v=ws.11)?redirectedfrom=MSDN</a></p>
+</div>
+<div class="paragraph">
+<p>New Experimental Console Features | Windows Command Line
+<a href="https://devblogs.microsoft.com/commandline/new-experimental-console-features/" class="bare">https://devblogs.microsoft.com/commandline/new-experimental-console-features/</a></p>
+</div>
+<div class="paragraph">
+<p>Introducing the Windows Console Colortool | Windows Command Line
+<a href="https://devblogs.microsoft.com/commandline/introducing-the-windows-console-colortool/" class="bare">https://devblogs.microsoft.com/commandline/introducing-the-windows-console-colortool/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_windows_terminal">windows terminal</h3>
+<div class="paragraph">
+<p>Get Windows Terminal - Microsoft Store
+<a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab" class="bare">https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab</a></p>
+</div>
+<div class="paragraph">
+<p>Windows Terminal Profile Settings | Microsoft Docs
+<a href="https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-settings" class="bare">https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-settings</a></p>
+</div>
+<div class="paragraph">
+<p>How to Customize the New Windows Terminal App
+<a href="https://www.howtogeek.com/426346/how-to-customize-the-new-windows-terminal-app/" class="bare">https://www.howtogeek.com/426346/how-to-customize-the-new-windows-terminal-app/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fonts">fonts</h3>
+<div class="paragraph">
+<p>How to add Custom Fonts to Command Prompt in Windows 10
+<a href="https://www.thewindowsclub.com/add-custom-fonts-to-command-prompt#:~:text=Add%20the%20custom%20font%20to%20the%20Command%20Prompt,section%20and%20click%20on%20OK" class="bare">https://www.thewindowsclub.com/add-custom-fonts-to-command-prompt#:~:text=Add%20the%20custom%20font%20to%20the%20Command%20Prompt,section%20and%20click%20on%20OK</a>.</p>
+</div>
+<div class="paragraph">
+<p>Monospaced Fonts | Font Squirrel
+<a href="https://www.fontsquirrel.com/fonts/list/classification/monospaced" class="bare">https://www.fontsquirrel.com/fonts/list/classification/monospaced</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_color_schemes_2">color schemes</h3>
+<div class="paragraph">
+<p>mbadolato/iTerm2-Color-Schemes: Over 230 terminal color schemes/themes for iTerm/iTerm2. Includes ports to Terminal, Konsole, PuTTY, Xresources, XRDB, Remmina, Termite, XFCE, Tilda, FreeBSD VT, Terminator, Kitty, MobaXterm, LXTerminal, Microsoft&#8217;s Windows Terminal, Visual Studio, Alacritty
+<a href="https://github.com/mbadolato/iTerm2-Color-Schemes#installation-instructions" class="bare">https://github.com/mbadolato/iTerm2-Color-Schemes#installation-instructions</a></p>
+</div>
+<div class="paragraph">
+<p>Release Color Tool April 2019 � microsoft/terminal
+<a href="https://github.com/microsoft/terminal/releases/tag/1904.29002" class="bare">https://github.com/microsoft/terminal/releases/tag/1904.29002</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_clipboard_support">clipboard support</h3>
+<div class="paragraph">
+<p>Is there a suggested clipboard solution for WSL ? � Issue #12092 � neovim/neovim
+<a href="https://github.com/neovim/neovim/issues/12092" class="bare">https://github.com/neovim/neovim/issues/12092</a></p>
+</div>
+<div class="paragraph">
+<p>WSL / bash-on-Windows: clipboard support � Issue #6227 � neovim/neovim
+<a href="https://github.com/neovim/neovim/issues/6227" class="bare">https://github.com/neovim/neovim/issues/6227</a></p>
+</div>
+<div class="paragraph">
+<p>When can the Windows command line tool directly copy/paste using Command/Ctrl + C/V? - Microsoft Q&amp;A
+<a href="https://docs.microsoft.com/en-us/answers/questions/510/when-can-the-windows-command-line-tool-directly-co.html#:~:text=The%20Windows%20command%20line%20can,%2F%20Ctrl%20%2B%20C%20%2F%20V" class="bare">https://docs.microsoft.com/en-us/answers/questions/510/when-can-the-windows-command-line-tool-directly-co.html#:~:text=The%20Windows%20command%20line%20can,%2F%20Ctrl%20%2B%20C%20%2F%20V</a>.</p>
+</div>
+<div class="paragraph">
+<p>Windows Subsystem Linux - Make VIM use the clipboard? - Super User
+<a href="https://superuser.com/questions/1291425/windows-subsystem-linux-make-vim-use-the-clipboard" class="bare">https://superuser.com/questions/1291425/windows-subsystem-linux-make-vim-use-the-clipboard</a></p>
+</div>
+<div class="paragraph">
+<p>mintty/wsltty: Mintty as a terminal for Bash on Ubuntu on Windows / WSL
+<a href="https://github.com/mintty/wsltty" class="bare">https://github.com/mintty/wsltty</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_launch">launch</h3>
+<div class="paragraph">
+<p>How do I get Windows 10 Terminal to launch WSL? - Stack Overflow
+<a href="https://stackoverflow.com/questions/56765067/how-do-i-get-windows-10-terminal-to-launch-wsl" class="bare">https://stackoverflow.com/questions/56765067/how-do-i-get-windows-10-terminal-to-launch-wsl</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_links">links</h3>
+<div class="paragraph">
+<p>Design Clickable Links &amp; Link preview feature/extension � Issue #574 � microsoft/terminal
+<a href="https://github.com/microsoft/terminal/issues/574" class="bare">https://github.com/microsoft/terminal/issues/574</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_notepad">notepad++</h3>
+<div class="paragraph">
+<p>Notepad 7.8.9: Stand with Hong Kong | Notepad
+<a href="https://notepad-plus-plus.org/downloads/v7.8.9/" class="bare">https://notepad-plus-plus.org/downloads/v7.8.9/</a></p>
+</div>
+<div class="paragraph">
+<p>notepad++ - Different colorisation for Json properties and values - Super User
+<a href="https://superuser.com/questions/1394957/different-colorisation-for-json-properties-and-values/1399767" class="bare">https://superuser.com/questions/1394957/different-colorisation-for-json-properties-and-values/1399767</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-09-19 19:19:33 -0700
+</div>
+</div>
+<link rel="stylesheet" href="./pygments-default.css">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains('stemblock')) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>
+<p><ul class="pa0">
+  
+   <li class="list">
+     <a href="../../tags/windows-terminal" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">windows-terminal</a>
+   </li>
+  
+</ul>
+
+
+<div class="mt6 instapaper_ignoref">
+
+
+</div>
+
+
+  
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="" >
+    &copy;  Frankie Liu's Site 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+    MathJax.Hub.Queue(function() {
+      
+      
+      
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i = 0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+
+</script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+        },
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js"
+        ]
+    }
+    });
+    // Autonumbering by mathjax
+    // MathJax.Hub.Config({
+    // TeX: { equationNumbers: { autoNumber: "AMS" } }
+    // });
+  </script>
+ 
+
+
+
+  <script src="../../dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

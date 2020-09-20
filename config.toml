@@ -5,20 +5,45 @@ title = "Frankie Liu's Site"
 theme = "ananke"
 publishDir = "docs"
 destination = "docs"
+
 [markup.asciidocext]
     extensions = ["asciidoctor-html5s", "asciidoctor-diagram"]
-# "asciidoctor-katex"
     workingFolderCurrent = true
     noheaderorfooter = false
     [markup.asciidocext.attributes]
         my-base-url = "https://frankieliu.github.io/hugo2/"
         my-attribute-name = "my value"
 
+# "asciidoctor-katex"
 # "css/custom.css"
 # "css/base16.monokai.css"
 
 [params]
-  custom_css = ["css/asciidoctor.css",
-                "css/pygments-default.css",
-                "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700",
-                "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"]
+  custom_css = [
+    "css/time.css",
+    "css/asciidoctor.css",
+    "css/pygments-default.css",
+    "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700",
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    title = "Tags"
+    url = "/tags"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories"
+  [[menu.main]]
+    identifier = "series"
+    name = "Series"
+    title = "Series"
+    url = "/series"

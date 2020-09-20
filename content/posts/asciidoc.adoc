@@ -1,14 +1,17 @@
 ---
 title: "Asciidoc"
 date: 2020-09-06T23:03:01-07:00
+tags: ["hugo"]
+categories: ["ssg"]
+series: ["docs"]
 draft: false 
 ---
 = asciidoctor 
 :source-highlighter: pygments
 // :pygments-css: class
 // :pygments-style: manni
-:linkcss:
 // :rouge-style: base16.monokai
+:linkcss:
 :icons: font
 :fonts: icons
 :icon-set: fas

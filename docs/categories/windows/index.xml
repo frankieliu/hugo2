@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Frankie Liu&#39;s Site</title>
+    <link>/categories/windows/</link>
+    <description>Recent content in windows on Frankie Liu&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2020 16:34:05 -0700</lastBuildDate>
+    
+	<atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows Terminal</title>
+      <link>/posts/windows-terminal/</link>
+      <pubDate>Tue, 15 Sep 2020 16:34:05 -0700</pubDate>
+      
+      <guid>/posts/windows-terminal/</guid>
+      <description>Windows Terminal  Windows Terminal Table of Contents Setting up Color schemes Generate a manifest of schemes Default .json app Save default settings Add color schemes Reformat the .json file Change the color scheme   vs Windows console Color scheme Adding a font Problems vs WindowsTerminal   References console windows terminal fonts color schemes clipboard support launch links notepad++      Setting up Download WindowsTerminal from github.</description>
+    </item>
+    
+  </channel>
+</rss>
